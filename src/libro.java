@@ -1,4 +1,4 @@
-public class libro implements Comparable<libro>{
+public class libro {//implements Comparable<libro>
     //atributos
     int id;
     String nombre, autor;
@@ -11,16 +11,16 @@ public class libro implements Comparable<libro>{
         this.cantidad = cantidad;
     }
 
-    @Override
+    /*@Override
     public int compareTo(libro lb) {
+    return String.valueOf(id).compareTo(String.valueOf(lb.id))*-1;
 
-
-        if (id> lb.id){
+        /*if (id> lb.id){
             return 1;
         } else if (id< lb.id) {
             return -1;
         }else {
             return 0;
-        }
+        }*/
     }
-}
+
